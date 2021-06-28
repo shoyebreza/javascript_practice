@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail form</title>
+    <link rel="stylesheet" href="mailer.css">
+    <script>
+        function checkblank()
+        {
+            var flag = 0;
+            var count;
+            for(count = 0; count <3; count++)
+            {
+                if(document.mailme.elements[count].value ="")
+                {
+                    flag = 1;
+                }
+            }
+
+            if (flag ==1)
+            {
+                alert("please fill all the forms");
+            }
+
+        }
+
+
+        function checkat ()
+        {
+            var correct = 0;
+            var seek ;
+            var alpha = document.maillme.email.value;
+            var ampfind = new String(alpha);
+            var beta = ampfind.length;
+
+            for(seek = 0; seek<beta; seek++)
+            {
+                if(ampfind.charAt(seek) == "@")
+                {
+                    var correct = 1;
+                }
+            }
+
+            if ( correct == 1)
+            {
+                alert("the  @ is missing form your email");
+            }
+        }
+
+        function checkall()
+        {
+            checkblank();
+            checkat();
+
+        }
+
+    </script>
+</head>
+<body>
+   <center>
+       <div class="headertext">
+           mail form  
+       </div>
+       <div class="labeltext">
+            <form action="" name="maillme" method="GET" ></form>
+       </div>
+   </center> 
+</body>
+</html>

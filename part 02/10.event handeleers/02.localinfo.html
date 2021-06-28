@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location propertise</title>
+    <script>
+        function reveal(){
+            var cr = "\n";
+            var display = "Hash : " + location.hash+ cr;
+            display+= "host:"+ location.host+cr;
+            display+= "hostname :"+ location.hostname+cr;
+            display+= "href : "+ location.href+cr;
+            display+= "path name :" + location.pathname+cr;
+            display+= "port :"+ location.port+cr;
+            display+= "protocol :"+ location.protocol+cr;
+            display+= "search : "+ location.search+cr;
+            alert(display);
+        }
+    </script>
+</head>
+<body onload="reveal()">
+    new window 
+    
+</body>
+</html>

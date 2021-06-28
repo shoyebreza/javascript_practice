@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image form element </title>
+    <script>
+        function loveme(){
+            var cupple = Math.random();
+            cupple = Math.floor(cupple * 100);
+            var throb = "";
+
+            if(cupple > 50){
+                throb= "he loves me!!";
+            }else{
+                throb= " he loves me not !!";
+            }
+
+            alert(throb);
+        }
+    </script>
+</head>
+<body bgcolor="#ffb7d0">
+    <center>
+    <form action="" name="heart">
+        <p>click the heart </p>
+        <input type="image" src="heart.jpg" alt="heart" name="ache" onclick="loveme();"> <br>
+        click five times more
+    </form>
+    </center>
+</body>
+</html>

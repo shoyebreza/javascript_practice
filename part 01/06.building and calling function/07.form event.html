@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+    <script>
+        function fillit(){
+            document.info.email.value = "reza@gmail.com";
+        }
+    </script>
+</head>
+<body bgcolor="gainsboro">
+    <center>
+        <form action="" name="info">
+            please inter your email info
+            <input type="text" name="email" onfocus="fillit()">
+        </form>
+    </center>
+</body>
+</html>

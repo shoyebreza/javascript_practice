@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do while loop </title>
+    <script>
+        var bigcities = new Array("bangladesh","beijing","tokeyo","mexico","new yourk","lossangels","london","berlin");
+        var counter = 0;
+        var metro = "";
+        bigcities.sort();
+        do{
+            metro+= bigcities[counter] + "<br>";
+            counter++
+        }while(counter < bigcities.length)
+
+        document.write(metro);
+
+        
+    </script>
+</head>
+<body bgcolor="cornsilk">
+    
+</body>
+</html>

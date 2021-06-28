@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic color change </title>
+    <script>
+        function message(hue){
+            document.forms[0].elements[5].value = hue;
+        }
+    </script>
+</head>
+<body>
+    <h2>big font fun fare !!</h2>
+    <form action="">
+        <input type="button" value="red" onclick="document.bgColor='red'" onmousedown="message('red')">
+        <input type="button" value="green" onclick="document.bgColor='green'" onmouseover="message('green')">
+        <input type="button" value="blue" onclick="document.bgColor='blue'" onmousemove="message('blue')"> <br>
+        <input type="button" value="font color yellow" onclick="document.fgColor='yellow'">
+        <input type="button" value="font color black" onclick="document.fgColor='black'"><p></p>
+        <input type="text" disabled>
+    </form>
+</body>
+</html>

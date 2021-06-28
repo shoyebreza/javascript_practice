@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change window</title>
+    <script>
+        function fixwin(){
+            var win = open("", "ralpha", "scroolbars = 0, width= 200, height = 100, resizable= no");
+            var s = win.document;
+            var message = document.form[0].george.value;
+            s.write('<body bgcolor = "hotpink">');
+            s.write('</h4>');
+            s.write('</body>');
+            s.close();
+
+        }
+       
+    </script>
+</head>
+<body>
+    <form action="">
+        <h3>open and write to a new window </h3>
+        <input type="text" size="30" name="george">
+        <p>
+            <input type="button" value="write new window" onclick="fixwin()">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> screen  properties</title>
+    <style type="text/css">
+        h2{
+            color:rgba(5, 85, 74, 0.829);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16pt;
+
+        }
+
+        .outtext{
+            color: #0a0a0a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(6, 4, 139, 0.76);
+        }
+    </style>
+
+    <script>
+        function showscreen(){
+            var display = "<h2> your screen has the character sticks: </h2><div class=outtext> <b><br>";
+            var screensee = new Array(5);
+            screensee[0] = "available screen height = " + screen.availHeight;
+            screensee[1] = "available screen width = " + screen.availWidth;
+            screensee[2] = "you have " + (screen.colorDepth) + " bit color";
+            screensee[3] = "your screen is " + screen.height+ " pixels height";
+            screensee[4] = "and "+screen.width+" pixel wide";
+            for (var counter = 0; counter < screensee.length; counter++){
+                display+= screensee[counter] + "<br>";
+            }
+
+            display+= "<br></b></div>"
+            document.write(display);
+        }
+
+        showscreen();
+    </script>
+</head>
+<body bgcolor="#fbf4eb">
+    
+</body>
+</html>

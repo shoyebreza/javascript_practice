@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructing method</title>
+    <script>
+        function Mall(name,shop,product){
+            this.name = name;
+            this.shop = shop;
+            this.product = product;
+        }
+
+        var bloom = new Mall("bloomy","nuts and lighting bolt", "organic electrict boat");
+        var display = bloom.name + "<br>";
+        display+= bloom.shop + "<br>";
+        display+= bloom.product;
+
+        document.write(display);
+    </script>
+</head>
+<body bgcolor="wheat">
+    
+</body>
+</html>

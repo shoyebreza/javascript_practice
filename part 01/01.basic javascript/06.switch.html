@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <script>
+        var sample2 = new image();
+        sample2.src = "sample2.gif";
+        var sample1 = new image();
+        sample1.src = "sample1.gif";
+
+        function switch2(){
+            document.sample.src = sample2.src
+        }
+
+        function switch1() {
+            document.sample.src = sample1.src
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onmouseover="switch2() " onmouseout="switch1() "> <img src="sample1.gif" alt="image1" border="0" name = "sample"></a>
+</body>
+</html>

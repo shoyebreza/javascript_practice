@@ -1,0 +1,18 @@
+.labeltext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #6e9282;
+}
+
+.headertext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: #c0baae;
+    font-weight: bolder;
+    background-color: #a44ca4;
+}
+
+body{
+    background-color: #f7efdc;
+}

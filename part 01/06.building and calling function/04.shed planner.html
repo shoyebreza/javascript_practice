@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shed planner</title>
+    <script>
+        function shedwall(front,back){
+                var front = prompt("how many feet accross the front?","");
+                var side = prompt("how many feet along in side ?","");
+                var numfront = (front * 12 * 2) / 8;
+                var numside = (side * 12 * 2) / 8;
+                var tota = numfront + numside;
+                var message = "you will need "+ tota + " one by eight inche by your sheed";
+
+                document.write(message);
+        }
+
+        shedwall();
+    </script>
+</head>
+<body bgcolor="palgoldenroad">
+    
+</body>
+</html>

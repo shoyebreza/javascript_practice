@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object and hirerche </title>
+    <style type="text/css">
+        h2{
+            font-size: 18pt;
+            color: #e8b002;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .clicknote{
+            font-size: 18pt;
+            font-weight: bold;
+            color: #fb503e;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+    <script>
+        function doit(){
+            window.document.petstore.puppy.value = "swissy";
+            window.document.petstore.clicker.value = " i have been clicked ";
+
+        }
+    </script>
+</head>
+<body bgcolor="#839063" onload="javascript:window.petstore.reset()">
+    <h2>object hirerche practice </h2>
+    <span class="clicknote"> &nbsp; click the button &nbsp;</span>
+    <form action="" name="petstore"> 
+        <input type="text" name="puppy">
+        <input type="button" name="clicker" value="click change value " onclick="doit()">
+    </form>
+</body>
+</html>

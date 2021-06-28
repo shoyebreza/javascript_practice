@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+    <script>
+        var auto = new Object();
+        var bigone = new Object();
+        function showchange(){
+            auto = document.forms[0].alpha;
+            auto.value = "more change";
+
+        }
+
+        function  areawrite(){
+            bigone = document.forms[0].alice;
+            bigone.value = "you have plenty of room to write";
+        }
+
+
+    </script>
+</head>
+<body>
+    <h3>write soeme thing ineithert window</h3>
+    <form action="">
+        <input type="text" name="alpha" onkeypress="showchange();" > <br> <br>
+        <textarea name="alice" id="" cols="30" rows="5" onblur="areawrite();"></textarea>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reading cookie</title>
+</head>
+<body bgcolor="hotpink">
+    <script>
+        document.cookie = "sunlight";
+       var mycookies =  document.cookie;
+       var cookieval = mycookies.substring(10, mycookies.length);
+       document.write(cookieval);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using continue and label</title>
+    <script>
+        var teamj = "";
+        var teammember = 0;
+        team:
+        for(var outcount= 1; outcount <3; outcount ++){
+            for(var incount = 20 ; incount < 35; incount ++){
+                if( incount == 22 || incount == 29 || incount == 30)
+                {
+                    continue;
+                }
+
+                if (teammember == 12)
+                {
+                    teammember =0;
+                }
+
+                teammember++;
+
+                teamj+= "team "+outcount+ "member " + teammember + "jersey number "+ incount+ "<br>";
+            }
+        }
+
+        document.write(teamj);
+    </script>
+</head>
+<body bgcolor="mediumspringgreen">
+    
+</body>
+</html>

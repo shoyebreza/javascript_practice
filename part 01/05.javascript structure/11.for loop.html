@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+
+    <script>
+        var found = "email address is missing @ symbol";
+        var email = prompt("please enter your email address: ","");
+        for (var counter = 0; counter<=email.length; counter++){
+            var findat = email.charAt(counter);
+
+            if(findat == "@"){
+                found = "email address is correct";
+            }
+        }
+
+        document.write(found);
+    </script>
+</head>
+<body bgcolor="powderblue">
+    
+</body>
+</html>

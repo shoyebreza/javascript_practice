@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text box </title>
+    <script>
+        function toshort(){
+            if(document.user.username.value.length < 7){
+                alert(" your user name must be at least 7 character");
+            }else{
+                alert("your user name is accepted");
+            }
+        }
+    </script>
+</head>
+<body bgcolor="goldenrod">
+    <h2> enter your user name between 7 an 12 character </h2>
+    <form action="" name="user">
+        username:
+        <input type="text" name="username" size="12" maxlength="12"><br> <br>
+        <input type="button" value="check user " onclick="toshort();">
+    </form>
+</body>
+</html>
